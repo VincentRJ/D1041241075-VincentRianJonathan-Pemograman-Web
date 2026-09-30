@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan - Kevin & Keisha</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="terkunci">
+
+    <!-- sampul pembuka -->
+    <div class="sampul-pembuka" id="sampulPembuka">
+        <div class="isi-sampul-pembuka">
+            <p class="label-atas">The Wedding Of</p>
+            <h1 class="tulisan-elegan nama-mempelai-pembuka">Kevin & Keisha</h1>
+            <p style="font-size: 14px; letter-spacing: 2px; text-transform: uppercase; margin-top: 25px; opacity: 0.8;">Kepada Yth.</p>
+            <p class="tulisan-elegan" id="namaTamu" style="font-size: 30px; color: var(--warna-aksen-muda);">Bapak/Ibu/Saudara/i</p>
+            <p class="teks-kutipan" style="font-size: 16px; margin: 20px auto 30px auto; max-width: 320px;">Dengan penuh sukacita, kami mengundang Anda untuk turut merayakan hari bahagia kami.</p>
+            <button id="tombolBukaUndangan" class="tombol-kirim" style="width: auto; padding: 15px 40px;">Buka Undangan</button>
+        </div>
+    </div>
+
+    <!-- musik latar -->
+    <audio id="musikLatar" src="music/musik.mp3" loop></audio>
+    <button id="tombolMusik" class="tombol-musik" aria-label="Putar atau jeda musik">🎵</button>
+
+    <!-- menu -->
+    <nav class="menu-navigasi" id="menuNavigasi">
+        <a href="#mempelai">Mempelai</a>
+        <a href="#galeri">Momen</a>
+        <a href="#acara">Acara</a>
+        <a href="#rsvp">RSVP</a>
+        <a href="#kado">Kado</a>
+    </nav>
+
+    <!-- sampul utama -->
+    <header class="bagian-sampul" id="sampul">
+        <h3 class="label-atas">The Wedding Of</h3>
+        <h1 class="nama-mempelai tulisan-elegan">Kevin & Keisha</h1>
+        <div class="tanggal-acara">12 . 12 . 2026</div>
+    </header>
+
+    <main class="konten-utama">
+
+        <section class="bagian-kutipan reveal">
+            <blockquote class="teks-kutipan">Ya Tuhanku Yang Maha Pengasih, dengan segala kerendahan hati kami memohon anugerah-Mu. Semoga Engkau mempersatukan kami dalam kasih dan keharmonisan, menjaga kami agar senantiasa berjalan bersama dan tidak terpisahkan sepanjang kehidupan. Anugerahkanlah kepada kami umur yang panjang, kesehatan, kedamaian, serta kebahagiaan dalam rumah yang kami bangun bersama. Semoga rumah tangga kami dipenuhi cinta, sukacita, dan keturunan yang baik, serta senantiasa berada dalam lindungan dan tuntunan-Mu.</blockquote>
+        </section>
+
+        <!-- hitung mundur -->
+        <section class="bagian-hitung-mundur reveal">
+            <h2>Menuju Hari Bahagia</h2>
+            <div class="baris-hitung-mundur">
+                <div class="kotak-waktu">
+                    <span class="angka-waktu" id="cdHari">00</span>
+                    <span class="label-waktu">Hari</span>
+                </div>
+                <div class="kotak-waktu">
+                    <span class="angka-waktu" id="cdJam">00</span>
+                    <span class="label-waktu">Jam</span>
+                </div>
+                <div class="kotak-waktu">
+                    <span class="angka-waktu" id="cdMenit">00</span>
+                    <span class="label-waktu">Menit</span>
+                </div>
+                <div class="kotak-waktu">
+                    <span class="angka-waktu" id="cdDetik">00</span>
+                    <span class="label-waktu">Detik</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- mempelai -->
+        <section class="bagian-mempelai reveal" id="mempelai">
+            <div class="kartu-mempelai">
+                <div class="bingkai-foto">
+                    <img src="image/fotokevin.jpg" alt="Foto Kevin">
+                </div>
+                <h3 class="tulisan-elegan">Kevin Sitohang</h3>
+                <p>Putra Pertama dari <br> Bapak Michael Sitohang & Ibu Gabriella Siregar</p>
+            </div>
+
+            <div class="teks-dan">&</div>
+
+            <div class="kartu-mempelai">
+                <div class="bingkai-foto">
+                    <img src="image/fotokeisha.jpg" alt="Foto Keisha">
+                </div>
+                <h3 class="tulisan-elegan">Keisha Angelica Permata</h3>
+                <p>Putri Ketiga dari <br> Bapak Yohanes & Ibu Clara Natalia</p>
+            </div>
+        </section>
+
+        <!-- galeri -->
+        <section class="bagian-galeri reveal" id="galeri">
+            <h2>Momen Kami</h2>
+            <p style="margin-bottom: 30px;">Momen kebahagiaan yang kami abadikan bersama.</p>
+            <div class="baris-galeri">
+                <div class="kotak-galeri">
+                    <img src="https://i.pinimg.com/1200x/75/41/d2/7541d2378059e2587f32c6532d9b50fc.jpg" alt="Cincin Pernikahan">
+                </div>
+                <div class="kotak-galeri">
+                    <img src="https://i.pinimg.com/1200x/62/b2/dd/62b2ddb9988486bec1c6da1264fca0b4.jpg" alt="Bergandengan Tangan">
+                </div>
+                <div class="kotak-galeri">
+                    <img src="https://i.pinimg.com/736x/b2/57/d9/b257d9f5f01ca39ae9ebd8e8109cb057.jpg" alt="Buket Bunga">
+                </div>
+                <div class="kotak-galeri">
+                    <img src="https://i.pinimg.com/1200x/5d/70/df/5d70df3aa68f0e144d595d39b01e343e.jpg" alt="Prewedding 1">
+                </div>
+                <div class="kotak-galeri">
+                    <img src="https://i.pinimg.com/1200x/ba/1b/55/ba1b5572dfac8586c77aef14a70c9e0a.jpg" alt="Prewedding 2">
+                </div>
+                <div class="kotak-galeri">
+                    <img src="https://i.pinimg.com/736x/39/2b/54/392b54dc85865084f3bbe5c718ad383e.jpg" alt="Prewedding 3">
+                </div>
+            </div>
+        </section>
+
+        <!-- acara -->
+        <section class="bagian-acara reveal" id="acara">
+            <h2>Waktu & Tempat</h2>
+            <p class="sub-judul">Dengan memohon rahmat dan ridho Tuhan Yang Maha Esa, kami mengundang Bapak/Ibu/Saudara/i untuk hadir pada rangkaian acara pernikahan kami:</p>
+
+            <div class="baris-acara">
+                <div class="kartu-acara">
+                    <h3>Acara Pemberkatan di Gereja</h3>
+                    <span class="teks-penting">Sabtu, 12 Desember 2026</span>
+                    <p>Pukul 09.00 WIB - Selesai</p>
+                    <p>Gedung Katedral Pontianak, Santo Yosef<br>Jl. Patimura No.195, Kota Pontianak</p>
+                    <div class="baris-tombol-acara">
+                        <a href="https://www.google.com/maps/place/Gereja+Katedral+Pontianak,+Santo+Yosef/@-0.0272621,109.3333273,17z/data=!3m1!4b1!4m6!3m5!1s0x2e1d585096004cfb:0x970b0a544ceba22f!8m2!3d-0.0272621!4d109.3381982!16s%2Fg%2F11b7339k38?entry=ttu&g_ep=EgoyMDI2MDkyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="tombol-peta">Buka di Google Maps</a>
+                        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Pemberkatan%20Pernikahan%20Kevin%20%26%20Keisha&amp;dates=20261212T090000/20261212T110000&amp;ctz=Asia/Jakarta&amp;details=Undangan%20pernikahan%20Kevin%20%26%20Keisha.%20Acara%20pemberkatan%20di%20gereja.&amp;location=Gereja%20Katedral%20Pontianak%2C%20Santo%20Yosef%2C%20Jl.%20Patimura%20No.195%2C%20Pontianak" target="_blank" rel="noopener" class="tombol-peta">Simpan ke Kalender</a>
+                    </div>
+                </div>
+
+                <div class="kartu-acara">
+                    <h3>Resepsi</h3>
+                    <span class="teks-penting">Sabtu, 12 Desember 2026</span>
+                    <p>Pukul 18.00 WIB - Selesai</p>
+                    <p>Hotel Aston Pontianak<br>Jl. Gajah Mada No.21, Kota Pontianak</p>
+                    <div class="baris-tombol-acara">
+                        <a href="https://www.google.com/maps/place/Aston+Pontianak+Hotel+%26+Convention+Center/@-0.0323221,109.3345233,16z/data=!4m13!1m2!2m1!1saston!3m9!1s0x2e1d59f8d07e457f:0x73634c17013a0f8d!5m2!4m1!1i2!8m2!3d-0.0358824!4d109.3435377!15sCgVhc3RvbiIDiAEBWgciBWFzdG9ukgEFaG90ZWyaASRDaGREU1VoTk1HOW5TMFZKVEhjdFlWOU5jM1ZoTkhCQlJSQULgAQD6AQUIiQEQOw!16s%2Fg%2F1228rrjr?entry=ttu&g_ep=EgoyMDI2MDkyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="tombol-peta">Buka di Google Maps</a>
+                        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Resepsi%20Pernikahan%20Kevin%20%26%20Keisha&amp;dates=20261212T180000/20261212T210000&amp;ctz=Asia/Jakarta&amp;details=Undangan%20pernikahan%20Kevin%20%26%20Keisha.%20Acara%20resepsi.&amp;location=Aston%20Pontianak%20Hotel%20%26%20Convention%20Center%2C%20Jl.%20Gajah%20Mada%20No.21%2C%20Pontianak" target="_blank" rel="noopener" class="tombol-peta">Simpan ke Kalender</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- rsvp -->
+        <section class="bagian-rsvp reveal" id="rsvp">
+            <h2>RSVP</h2>
+            <p style="margin-bottom: 30px; font-size: 18px;">Konfirmasi Kehadiran Anda</p>
+            
+            <div class="formulir-rsvp">
+                <form action="#" method="POST" id="formRSVP">
+                    <table class="tabel-formulir">
+                        <tr>
+                            <td><label for="nama">Nama Lengkap</label></td>
+                            <td><input type="text" id="nama" name="nama" placeholder="Ketik nama Anda di sini..." required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="kehadiran">Kehadiran</label></td>
+                            <td>
+                                <select id="kehadiran" name="kehadiran" required>
+                                    <option value="">-- Pilih --</option>
+                                    <option value="hadir">Hadir</option>
+                                    <option value="tidak_hadir">Tidak Hadir</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="jumlah">Jumlah Tamu</label></td>
+                            <td>
+                                <select id="jumlah" name="jumlah" required>
+                                    <option value="">-- Pilih --</option>
+                                    <option value="1">1 Orang</option>
+                                    <option value="2">2 Orang</option>
+                                    <option value="3">Lebih dari 2 Orang</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="ucapan">Pesan & Doa</label></td>
+                            <td><textarea id="ucapan" name="ucapan" rows="5" placeholder="Tuliskan Pesan & Doa Kalian Untuk Kami" required></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <button type="submit" class="tombol-kirim">Kirim RSVP</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <p id="pesanTerimaKasih" class="pesan-notifikasi" style="display: none;">Terima kasih, konfirmasi kehadiran Anda sudah kami terima!</p>
+            </div>
+        </section>
+
+        <!-- kado -->
+        <section class="bagian-amplop reveal" id="kado">
+            <h2>Wedding Gift</h2>
+            <div class="kartu-amplop">
+                <p class="sub-judul">Kehadiran Anda merupakan sebuah doa serta rasa syukur bagi kami, namun apabila Bapak/Ibu/Saudara/i berkeinginan untuk memberikan tanda kasih, dapat menyampaikannya melalui tombol berikut :</p>
+                <button type="button" id="tombolBeriKado" class="tombol-kirim" style="width: auto; padding: 15px 40px;">Beri Kado</button>
+            </div>
+        </section>
+
+        <!-- penutup -->
+        <section class="bagian-penutup reveal">
+            <p class="teks-kutipan">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu. Terima kasih atas perhatian Anda.</p>
+            <p class="tanda-tangan">Kami yang berbahagia,</p>
+            <h2 class="tulisan-elegan">Kevin & Keisha</h2>
+        </section>
+
+    </main>
+
+    <footer>
+        <h2 class="tulisan-elegan" style="font-size: 40px; margin-bottom: 10px;">Website Undangan Pernikahan</h2>
+        <p> by Vincent Rian Jonathan</p>
+    </footer>
+
+    <!-- lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="tombol-tutup-mengambang" id="tutupLightbox">&times;</span>
+        <img src="" alt="Pratinjau foto" id="gambarLightbox">
+    </div>
+
+    <!-- popup kado -->
+    <div class="modal-kado" id="modalKado">
+        <div class="isi-modal-kado">
+            <span class="tombol-tutup-mengambang" id="tutupModalKado">&times;</span>
+
+            <h3 class="judul-berkilau" style="margin-bottom: 20px;">Amplop Digital</h3>
+            <p class="sub-judul" style="margin-bottom: 25px;">Terima kasih atas doa dan dukungan Anda</p>
+
+            <div class="rekening-item">
+                <p>Bank BCA</p>
+                <p class="nomor-rekening">8172 6354 09</p>
+                <p style="margin-bottom: 12px;">a.n. Kevin Sitohang</p>
+                <button type="button" class="tombol-peta tombol-salin" data-rekening="8172635409">Salin Nomor</button>
+            </div>
+
+            <div class="rekening-item">
+                <p>Bank Mandiri</p>
+                <p class="nomor-rekening">1420 0876 54321</p>
+                <p style="margin-bottom: 12px;">a.n. Keisha Angelica Permata</p>
+                <button type="button" class="tombol-peta tombol-salin" data-rekening="1420087654321">Salin Nomor</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
